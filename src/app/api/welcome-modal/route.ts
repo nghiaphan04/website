@@ -38,6 +38,7 @@ export async function GET() {
       orderBy: { createdAt: 'desc' }
     });
 
+    console.log(welcomeModal)
     return NextResponse.json(createSuccessResponse(welcomeModal));
   } catch (error) {
     return NextResponse.json(
